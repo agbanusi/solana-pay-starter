@@ -2,7 +2,21 @@ import React, { useState } from "react";
 import { create } from "ipfs-http-client";
 import styles from "../styles/CreateProduct.module.css";
 
-const client = create("https://ipfs.infura.io:5001/api/v0");
+const client = create({
+  host: "ipfs.infura.io",
+  port: 5001,
+  protocol: "https",
+  headers: {
+    authorization:
+      "Bearer " +
+      btoa(
+        process.env.NEXT_PUBLIC_InfuraIPFSID +
+          ":" +
+          process.env.NEXT_PUBLIC_InfuraIPFSSecret
+      ),
+  },
+  apiPath: "/api/v0",
+});
 
 const CreateProduct = () => {
   const [newProduct, setNewProduct] = useState({
