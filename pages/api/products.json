@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "OG Emoji pack",
+    "price": "0.09",
+    "description": "Get this fire emoji pack for only $0.09! Includes 3 hot emojis: Forreal, Flooshed, and Sheesh!",
+    "image_url": "https://i.imgur.com/rVD8bjt.png",
+    "filename": "Emojis.zip",
+    "hash": "QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
+  },
+  {
+    "id": 2,
+    "name": "OG Bonny pack",
+    "price": "0.99",
+    "description": "Get this fire Bonny pack for only $0.99! Includes 3 hot Bonnys: Forreal, Flooshed, and Sheesh!",
+    "image_url": "https://i.pinimg.com/564x/3a/ce/7e/3ace7ef53fdd510036e60f96b8f4343f.jpg",
+    "filename": "Bonny.zip",
+    "hash": "QmbXPnAHAC5rNqqLh6P3nG3uQRJUPuUD79GdqKPKd4tQj2"
+  },
+  {
+    "id": 3,
+    "name": "OG Diamond pack",
+    "price": "0.29",
+    "description": "Get this fire Diamond pack for only $0.29! Includes 3 hot Diamonds: Forreal, Flooshed, and Sheesh!",
+    "image_url": "https://thenewspocket.com/wp-content/uploads/2021/12/Heres-how-to-find-Diamonds-in-Minecraft-1.18-Best-Way-1.jpeg",
+    "filename": "Diamond.zip",
+    "hash": "QmbXPnAHAC5rNqqLh6P3nG3uQRJUPuUD79GdqKPKd4tQj2"
+  },
+  {
+    "id": 4,
+    "name": "Namers",
+    "price": "0.5",
+    "image_url": "https://c.tenor.com/tDlaEtqrH6kAAAAj/tellie-tubbies-fun.gif",
+    "description": "Let it rain, Let it rain, Let it rain!!!"
+  }
+]
