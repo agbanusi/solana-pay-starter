@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { create } from "ipfs-http-client";
 import styles from "../styles/CreateProduct.module.css";
-
+console.log(
+  process.env.NEXT_PUBLIC_InfuraIPFSID,
+  process.env.NEXT_PUBLIC_InfuraIPFSSecret,
+  Buffer.from(
+    process.env.NEXT_PUBLIC_InfuraIPFSID +
+      ":" +
+      process.env.NEXT_PUBLIC_InfuraIPFSSecret
+  ).toString("Base64")
+);
 const client = create({
   host: "ipfs.infura.io",
   port: 5001,
@@ -9,11 +17,11 @@ const client = create({
   headers: {
     authorization:
       "Bearer " +
-      btoa(
+      Buffer.from(
         process.env.NEXT_PUBLIC_InfuraIPFSID +
           ":" +
           process.env.NEXT_PUBLIC_InfuraIPFSSecret
-      ),
+      ).toString("Base64"),
   },
   apiPath: "/api/v0",
 });
