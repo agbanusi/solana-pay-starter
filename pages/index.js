@@ -55,19 +55,19 @@ const App = () => {
       <HeadComponent />
       <div className="container">
         <header className="header-container">
-          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
+          <p className="header"> 😳 Welcome to IMG Store 😈</p>
           <p className="sub-text">
             The only emoji store that accepts shitcoins
           </p>
 
-          {isOwner && (
+          
             <button
               className="create-product-button"
               onClick={() => setCreating(!creating)}
             >
               {creating ? "Close" : "Create Product"}
             </button>
-          )}
+          
         </header>
 
         <main>
