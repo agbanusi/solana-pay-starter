@@ -60,14 +60,12 @@ const App = () => {
             The only emoji store that accepts shitcoins
           </p>
 
-          
-            <button
-              className="create-product-button"
-              onClick={() => setCreating(!creating)}
-            >
-              {creating ? "Close" : "Create Product"}
-            </button>
-          
+          <button
+            className="create-product-button"
+            onClick={() => setCreating(!creating)}
+          >
+            {creating ? "Close" : "Create Product"}
+          </button>
         </header>
 
         <main>
@@ -75,7 +73,7 @@ const App = () => {
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>
 
-        <div className="footer-container">
+        {/* <div className="footer-container">
           <img
             alt="Twitter Logo"
             className="twitter-logo"
@@ -87,7 +85,7 @@ const App = () => {
             target="_blank"
             rel="noreferrer"
           >{`built on @${TWITTER_HANDLE}`}</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
